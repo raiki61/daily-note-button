@@ -1,0 +1,80 @@
+{
+  "name": "daily-note-button",
+  "displayName": "Daily Note Button",
+  "description": "A status bar button that opens today's YYYY-MM-DD.md in a folder you choose once per machine.",
+  "version": "0.1.0",
+  "publisher": "raiki-kiyomura",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/raiki61/daily-note-button"
+  },
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "daily note",
+    "journal",
+    "diary",
+    "markdown"
+  ],
+  "extensionKind": [
+    "workspace"
+  ],
+  "main": "./src/extension.js",
+  "files": [
+    "src/**",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "capabilities": {
+    "untrustedWorkspaces": {
+      "supported": true
+    }
+  },
+  "contributes": {
+    "commands": [
+      {
+        "command": "dailyNoteButton.openToday",
+        "title": "Open Today's Note",
+        "category": "Daily Note"
+      },
+      {
+        "command": "dailyNoteButton.chooseFolder",
+        "title": "Choose Folder for This Machine",
+        "category": "Daily Note"
+      }
+    ],
+    "configuration": {
+      "title": "Daily Note Button",
+      "properties": {
+        "dailyNoteButton.folder": {
+          "type": "string",
+          "default": "",
+          "scope": "machine",
+          "markdownDescription": "Absolute path of the folder that holds daily notes on this machine. Machine-scoped, so Settings Sync does not copy it to other machines. Leave empty to be asked on first use."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "test": "node --test",
+    "package": "vsce package"
+  },
+  "devEngines": {
+    "runtime": {
+      "name": "node",
+      "version": "^22.15.0 || >=23.5.0",
+      "onFail": "error"
+    }
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^3.0.0"
+  }
+}
