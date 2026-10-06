@@ -37,7 +37,7 @@ async function openNoteIn(folder) {
   try {
     file = await ensureNote(folder, new Date());
   } catch (err) {
-    // A saved folder that keeps failing would otherwise fail on every click with no way to change it.
+    // Offer another folder right here, so a broken saved folder is not a dead end on every click.
     if (await vscode.window.showErrorMessage(err.message, "Choose Folder")) {
       await openNoteIn(await chooseFolder());
     }

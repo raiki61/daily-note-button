@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.1
+
+- Marketplace icon and listing links.
+- README covers installing, settings and Remote - SSH.
+
 ## 0.1.0
 
 - Status bar button that opens today's `YYYY-MM-DD.md`, creating it if missing.

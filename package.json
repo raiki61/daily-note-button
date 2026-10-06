@@ -2,9 +2,18 @@
   "name": "daily-note-button",
   "displayName": "Daily Note Button",
   "description": "A status bar button that opens today's YYYY-MM-DD.md in a folder you choose once per machine.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publisher": "raiki-kiyomura",
   "license": "MIT",
+  "icon": "images/icon.png",
+  "galleryBanner": {
+    "color": "#1f5f8b",
+    "theme": "dark"
+  },
+  "homepage": "https://github.com/raiki61/daily-note-button#readme",
+  "bugs": {
+    "url": "https://github.com/raiki61/daily-note-button/issues"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/raiki61/daily-note-button"
@@ -17,9 +26,13 @@
   ],
   "keywords": [
     "daily note",
+    "daily notes",
     "journal",
     "diary",
-    "markdown"
+    "markdown",
+    "status bar",
+    "obsidian",
+    "foam"
   ],
   "extensionKind": [
     "workspace"
@@ -28,7 +41,8 @@
   "files": [
     "src/**",
     "LICENSE",
-    "CHANGELOG.md"
+    "CHANGELOG.md",
+    "images/icon.png"
   ],
   "activationEvents": [
     "onStartupFinished"

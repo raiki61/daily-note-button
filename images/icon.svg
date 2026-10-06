@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <rect width="256" height="256" rx="48" fill="#1f5f8b"/>
+  <!-- note sheet with a folded corner -->
+  <path d="M64 44h96l40 40v128a12 12 0 0 1-12 12H64a12 12 0 0 1-12-12V56a12 12 0 0 1 12-12z" fill="#ffffff"/>
+  <path d="M160 44v28a12 12 0 0 0 12 12h28z" fill="#cfe3f1"/>
+  <!-- today band -->
+  <rect x="52" y="92" width="148" height="34" fill="#f2a541"/>
+  <text x="126" y="117" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="2">TODAY</text>
+  <!-- writing lines -->
+  <rect x="72" y="146" width="108" height="8" rx="4" fill="#9fb8cc"/>
+  <rect x="72" y="166" width="108" height="8" rx="4" fill="#9fb8cc"/>
+  <rect x="72" y="186" width="64" height="8" rx="4" fill="#9fb8cc"/>
+</svg>
